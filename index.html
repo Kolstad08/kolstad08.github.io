@@ -9,6 +9,12 @@
       rel="stylesheet"
     />
     <link href="style.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
   </head>
 
   <body>
@@ -19,7 +25,7 @@
     >
       <div class="container d-flex justify-content-between align-items-center">
         <a class="navbar-brand fw-semibold text-white" href="index.html"
-          >Læringsportalen</a
+          >Innlogging</a
         >
         <div>
           <button id="authOpenBtn" class="btn btn-sm btn-outline-light">
@@ -33,18 +39,44 @@
     <!-- HERO -->
     <header class="py-5 bg-light border-bottom">
       <div class="container">
-        <h1 class="h3 fw-bold">Supabase + HTML + JS: enkel innlogging</h1>
+        <h1 class="h3 fw-bold">Innlogging og oppgaver</h1>
+        <h4>Velkommen til min side!</h4>
         <p class="text-muted mb-0">
-          Innlogging, registrering og roller (admin/user) uten rammeverk.
+          Trykk på knappen til høyre der det står "Logg inn" for å logge inn på
+          din bruker.
         </p>
       </div>
     </header>
 
     <main class="container py-4">
-      <h2 class="h5">Velkommen</h2>
+      <h2 class="h5">Oppgaver</h2>
       <p class="text-muted">
-        Bruk knappen <em>Logg inn</em> oppe til høyre for å teste løsningen.
+        Under her ligger oppgaver i forskjellige bokser. Trykk på den blå
+        knappen for å komme inn på de forskjellige oppgavene.
       </p>
+
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+<div class="col">
+  <h5>Oppgave 1</h5>
+<a class="btn btn-primary" href="#" role="button">Link</a>
+</div>
+          </div>
+          <div class="col-md-4">
+<div class="col">
+  <h5>Oppgave 2</h5>
+<a class="btn btn-primary" href="#" role="button">Link</a>
+</div>
+          </div>
+          <div class="col-md-4">
+<div class="col">
+  <h5>Oppgave 3</h5>
+<a class="btn btn-primary" href="#" role="button">Link</a>
+</div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <!-- INNLOGGINGSPANEL (skjult) -->
@@ -117,9 +149,7 @@
             <button class="btn btn-dark w-100 mb-2" type="submit">
               Opprett profil
             </button>
-            <div class="text-muted small">
-              Admin settes automatisk til e-posten du oppga i SQL-koden.
-            </div>
+            <div class="text-muted small"></div>
             <div id="signupMsg" class="text-muted small mt-2"></div>
           </form>
         </div>
@@ -134,7 +164,11 @@
         </div>
       </div>
     </aside>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
     <script type="module" src="script.js"></script>
   </body>
 </html>

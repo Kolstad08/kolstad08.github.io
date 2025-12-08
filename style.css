@@ -9,6 +9,16 @@ body {
   color: #111;
   margin: 0;
 }
+/* Bokser */
+.col {
+  background-color: white;
+  height: 200px;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
 
 /* Auth-panel */
 .auth-panel {
